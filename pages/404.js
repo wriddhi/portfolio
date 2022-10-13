@@ -1,7 +1,5 @@
 import Head from 'next/head'
 import Navbar from '../components/Navbar'
-import Landing from '../components/Landing'
-import Footer from '../components/Footer'
 
 export default function Home() {
 
@@ -13,9 +11,6 @@ export default function Home() {
         <link rel="icon" href="/WHlogo.ico" />
       </Head>
       <Navbar/>
-      <Landing/>
-      {/* <Vision/> */}
-      <Footer/>
     </>
   )
 }

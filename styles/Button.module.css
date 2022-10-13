@@ -1,0 +1,61 @@
+.dull {
+    background: transparent;
+    color: var(--text-dull);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 0.5rem 0.8rem;
+    outline: 2px solid var(--hover-dark);
+    border-radius: 5px;
+    transition: all 0.2s ease-in;
+}
+
+.dull:hover {
+    background: var(--hover-dark);
+    color: var(--text-bright);
+    /* outline: 2px solid var(--text-bright); */
+}
+
+.bright {
+    background: transparent;
+    color: var(--accent-bright);
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 0.5rem 0.8rem;
+    outline: 2px solid var(--accent-bright);
+    border-radius: 5px;
+    transition: all 0.2s ease-in;
+}
+
+.bright:hover {
+    background: var(--accent-bright);
+    color: var(--bg-mid);
+}
+
+.full {
+    background: var(--accent-dull);
+    color: var(--bg-dark);
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0.5rem 0.8rem;
+    transition: all 0.2s ease-in;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+
+    min-width: fit-content;
+    transition: 0.2 ease-in;
+}
+
+.full:hover {
+    background-color: var(--accent-bright);
+    color: black;
+    transform: translateY(-10%);
+}
+
+@media screen and (max-width: 1000px) {
+    .dull, .bright, .full {
+        font-size: 0.75rem;
+    }
+    
+}

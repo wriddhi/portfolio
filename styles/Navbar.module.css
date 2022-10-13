@@ -1,0 +1,135 @@
+@import url('http://fonts.cdnfonts.com/css/glacial-indifference-2');
+
+.header {
+    background-color: var(--bg-light);
+    color: var(--text-dull);
+    font-size: 1rem;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding: 1.2rem;
+    box-shadow: 0 9px 15px -12px rgb(0 0 0 / 50%);
+}
+
+/* .header h1 {
+    font-size: 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    color: var(--accent-bright);
+    cursor: pointer;
+} */
+
+.logoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+.logo {
+    cursor: pointer;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: 'Glacial Indifference', sans-serif !important;
+    transition: all 0.2s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo *{
+    all: inherit;
+    font-weight: bold; 
+}
+
+.logo:hover {
+    color: var(--text-bright);
+}
+
+.logoImg {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    z-index: 100;
+}
+
+.logoImg:hover {
+    /* translate: 0 30%; */
+    rotate: -90deg;
+}
+
+.link {
+    text-transform: uppercase;
+
+}
+
+.link:hover {
+    color: var(--text-bright);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.active {
+    position: relative;
+    color: var(--accent-bright);
+}
+
+.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 200%);
+    border: 7.5px solid transparent;
+    border-bottom: 12.5px solid var(--accent-bright);
+}
+
+.hamIcon {
+    height: 30px;
+    width: 30px;
+    /* outline: 1px solid var(--text-dull); */
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    
+    transition: all 2s ease-in-out;
+}
+
+.hambar {
+    width: 25px;
+    height: 15%;
+    border-radius: 20px;
+    background-color: var(--text-dull);
+}
+
+.tophambar {
+    width: 15px;
+}
+
+.midhambar {
+    width: 20px;
+}
+
+.hamIcon:hover {
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 1000px) {
+    .header {
+        background-color: var(--bg-light);
+        color: var(--text-dull);
+        font-size: 0.75rem;
+        
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    
+        padding: 1.2rem;
+        box-shadow: 0 9px 15px -12px rgb(0 0 0 / 50%);
+    }
+    
+}

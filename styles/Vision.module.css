@@ -1,0 +1,127 @@
+.visionContainer {
+    background-color: var(--bg-light);
+    height: 85vh;
+    width: 100vw;
+    /* overflow: hidden; */
+    margin: 5rem 0;
+
+    display: grid;
+    place-items: center;
+}
+
+.vision {
+    width: 85%;
+    height: 85%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    gap: 2rem;
+}
+
+.vision p {
+    transition: all 0.2s ease-in;
+}
+
+.vision p i {
+    font-size: inherit;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.vision p:hover {
+    color: var(--text-bright);
+}
+
+.vision p:hover i{
+    color: var(--accent-bright);
+}
+
+.vision h1 {
+    font-size: 2.5vw;
+    color: var(--accent-bright);
+
+    opacity: 0.2;
+    translate: -100%;
+
+    transition: all 0.5s ease-in-out;
+    
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.vision h1 * {
+    font-size: 2.5vw;
+    color: var(--accent-bright);
+    transition: all 0.5s ease-in-out;
+    z-index: 100;
+}
+
+.vision p {
+    color: var(--text-dull);
+    font-size: 1.5vw;
+    text-align: center;
+    opacity: 0.2;
+    translate: -100%;
+
+    transition: all 0.5s ease-in-out;
+    transition-delay: 0.25s;
+}
+
+.pyramid {
+    margin-top: 2rem;
+    padding: 2rem;
+    
+    translate: -100% 0;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    transition-delay: 0.5s;
+}
+
+.pyramid li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    gap: 1rem;
+    transition: all 0.2s ease-in-out;
+    color: var(--text-dull);
+}
+
+.pyramid li:hover {
+    translate: 0 -10%;
+    color: var(--text-bright);
+}
+
+.pyramid li:hover .pyramidLogo {
+    color: var(--accent-bright);
+    scale: 1.2;
+}
+
+
+.pyramid li:nth-child(1) {
+    font-size: 1.5rem;
+}
+.pyramid li:nth-child(2) {
+    font-size: 1.75rem;
+}
+
+.pyramid li:nth-child(3) {
+    font-size: 2rem;
+}
+.pyramid li:nth-child(4) {
+    font-size: 2.25rem;
+}
+.pyramid li:nth-child(5) {
+    font-size: 2.5rem;
+}
+
+
+.pyramid li:nth-child(n) * {
+    color : inherit;
+    font-size: inherit;
+}

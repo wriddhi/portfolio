@@ -1,0 +1,129 @@
+.about {
+    width: 75vw;
+    margin: 3rem auto;
+    background-color: var(--bg-dark);
+    color: var(--text-dull);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem;
+    gap: 2rem;
+}
+
+.about h1{
+    font-size: 2rem;
+    color: var(--accent-bright);
+}
+
+.about p {
+    width: 70%;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.slider {
+    background-color: var(--bg-dark);
+    color: var(--text-dull);
+    height: 300px;
+    width: 100vw;
+    
+    margin: 3rem auto;
+    padding: 2rem;
+
+    display: grid;
+    place-items: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.slideTrack {
+    display: flex;
+    width: calc(250px*20);
+    animation: scroll 10s linear infinite;
+}
+
+.slideTrack:hover {
+    animation-play-state: paused;
+}
+
+.slide {
+    width: 250px;
+    height: 250px;
+    display: grid;
+    place-items: center;
+    /* display: flex; */
+    /* align-items: center; */
+    padding: 1rem;
+    perspective: 100px;
+
+    position: relative;
+}
+
+
+.slide *{
+    font-size: 5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.slide  :first-child:hover {
+    transform: translateZ(10px);
+    color: var(--text-bright);
+}
+
+.slide :first-child:hover + .title{
+    scale: 1;
+    transform: translate(50%, 50%);
+    color: var(--accent-bright);
+    outline: 1px solid var(--accent-bright);
+}
+
+.title {
+    font-size: 0.75rem;
+    padding: 5px;
+    position: absolute;
+    top: 65%;
+    right: 50%;
+    transform: translate(50%, 0);
+    background-color: var(--bg-dark);
+    outline: 1px solid var(--text-dull);
+    user-select: none;
+    min-width: fit-content;
+    text-align: center;
+    scale: 0;
+}
+
+
+.slider::before, .slider::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 15%;
+    z-index: 100;
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+    background: linear-gradient(to right, var(--bg-dark) 0%, rgba(17, 25,39, 0.1) 100%);
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    background: linear-gradient(to left, var(--bg-dark) 0%, rgba(17, 25,39, 0.1) 100%);
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-325px*10));
+    }
+}

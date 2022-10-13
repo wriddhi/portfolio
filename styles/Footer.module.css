@@ -1,0 +1,116 @@
+.footer {
+    width: 100%;
+    background-color: var(--bg-dark);
+    color: var(--text-dull);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.logoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+.logo {
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: 'Glacial Indifference', sans-serif !important;
+    transition: all 0.2s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo *{
+    all: inherit;
+    font-weight: bold; 
+}
+
+.logo:hover {
+    color: var(--text-bright);
+}
+
+.logoImg {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    z-index: 100;
+}
+
+.logoImg:hover {
+    translate: 0 -30%;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.links a{
+    color: var(--text-dull);
+    transition: all 0.2s ease-in-out;
+}
+
+.links a:hover {
+    color: var(--text-bright);
+}
+
+@media screen and (max-width: 1000px) {
+    .footer {
+    
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+    
+    .logo {
+        cursor: pointer;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-family: 'Glacial Indifference', sans-serif !important;
+        transition: all 0.2s ease;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .logo *{
+        all: inherit;
+        font-weight: bold; 
+    }
+    
+    .logo:hover {
+        color: var(--text-bright);
+    }
+    
+    .logoImg {
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        z-index: 100;
+    }
+    
+    .logoImg:hover {
+        translate: 0 -30%;
+    }
+    
+    .links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+}
