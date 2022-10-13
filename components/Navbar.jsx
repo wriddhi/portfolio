@@ -37,7 +37,7 @@ function FullNav({navRef}) {
       <Link href={'/portfolio'}><span className={styles.link} id="portfolio">Portfolio</span></Link>
       {/* <Link href={'/skills'}><span className={styles.link} id="skills">Skills</span></Link> */}
       {/* <Link href={'/blogs'}><span className={styles.link}>Blogs</span></Link> */}
-      <Button value="Contact Me" color="bright" action={contact}/>
+      <Button value="Contact" color="bright" action={contact}/>
       {/* <Button value="Contact" color="dull" action={contact} /> */}
     </header>
   )

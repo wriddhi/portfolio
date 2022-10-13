@@ -1,10 +1,24 @@
 .portfolio {
     width: 75%;
-    background-color: var(--text-dull);
+    background-color: var(--bg-light);
     margin: 3rem auto;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
 }
 
-.pdf {
-    width: 1440px;
-    height: 90vh;
+.portfolio h1 {
+    font-size: 2rem;
+    color: var(--accent-bright);
+}
+
+
+.image {
+    width: 1240px;
+    height: 1754px;
+    position: relative;
 }

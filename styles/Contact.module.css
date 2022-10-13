@@ -1,0 +1,48 @@
+.contact {
+    width: 75vw;
+    border-radius: 15px;
+    margin: 3rem auto;
+    background-color: var(--bg-light);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.contact h1 {
+    color: var(--accent-bright);
+    font-size: 2.5rem;
+}
+
+.contactInfo {
+    width: 50%;
+    background-color: var(--bg-mid);
+    color: var(--text-bright);
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    transition: all 0.2s ease-in;
+}
+
+
+.contactInfo:hover {
+    color: var(--accent-bright);
+    width: 55%;
+}
+
+.contactIcon {
+    font-size: 2rem;
+}
+
+.contactInfo a {
+    color: var(--accent-bright);
+    font-size: 0.5rem;
+}

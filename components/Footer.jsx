@@ -29,7 +29,6 @@ const Footer = () => {
                 <Link href={'/about'}>About</Link> | 
                 <Link href={'/projects'}>Projects</Link> | 
                 <Link href={'/portfolio'}>Portfolio</Link> | 
-                <Link href={'/skills'}>Skills</Link> | 
                 <Link href={'/contact'}>Contact</Link>
             </section>
             <div className={styles.copyright}>
